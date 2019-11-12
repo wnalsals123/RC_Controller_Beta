@@ -12,8 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Option extends AppCompatActivity {
-    Button b1, b2;
-    ImageButton b3;
+    Button b1, b2, b3;
     EditText ip, port;
     TextView v1, v2;
     public static Client c = new Client();
@@ -72,7 +71,7 @@ public class Option extends AppCompatActivity {
         });
 
         b3.setOnClickListener(v -> {
-            Intent in = new Intent(getApplicationContext(), Control.class);
+            Intent in = new Intent(this, Control.class);
             startActivity(in);
         });
     }
